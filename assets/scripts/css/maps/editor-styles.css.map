@@ -1,0 +1,1 @@
+{"version":3,"sources":["_editor.scss"],"names":[],"mappings":"AAAA,UACE,UAAA","file":"../editor-styles.css","sourcesContent":[".wp-block {\r\n  max-width: $content-max;\r\n}"]}
