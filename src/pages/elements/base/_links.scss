@@ -1,0 +1,27 @@
+/* Links */
+a {
+  color: $link-text;
+  background-color: transparent;
+  &:active {
+    color: $link-text-active;
+    text-decoration: $link-decoration;
+    outline: 0;
+    &:hover {
+      color: shift($link-text-active, $hover-percentage);
+      text-decoration: $hover-decoration;
+      outline: 0;
+    }
+    &:focus {
+      color: shift($link-text-active, $focus-percentage);
+      text-decoration: $hover-decoration;
+    }
+    &:visited {
+      color: tint($link-text-active, $visited-percentage);
+      text-decoration: $visited-decoration;
+    }
+  }
+  &:disabled{
+    color: shade($link-text, $inactive-percentage);
+    text-decoration: none;
+  }
+}

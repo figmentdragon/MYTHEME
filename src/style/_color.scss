@@ -1,0 +1,5 @@
+@import "colors/gray-scale";
+@import "colors/base";
+@import "colors/theme";
+
+$body-text: shade($primary, $text-percentage);
