@@ -1,0 +1,40 @@
+/**
+ * partials/header
+ * ---
+ */
+
+@mixin masthead {
+  margin: auto;
+  height: 100%;
+  max-height: 98vh;
+  max-width: 6vw;
+}
+
+@mixin site-description {
+    overflow: visible;
+    position: relative;
+    top: 10vh;
+    right: -3vw;
+    z-index: $z-index-site-description;
+
+    width: 100%;
+    max-width: 50vw;
+  }
+
+@mixin nameplate {
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 4vw;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    rotate: 180deg;
+}
+
+@mixin site-title {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      -webkit-text-stroke-color: $chocolate;
+      -webkit-text-stroke-width: 2px;
+    }
